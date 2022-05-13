@@ -5,7 +5,7 @@ Vocabulaire et context JSON-LD utilisé par la wet-boew.
 
 ## Vocabulaires 
 
-* [Rapport de conformance d'accessibilité - ACR](arc/)
+* [Rapport de conformance d'accessibilité - ACR](acr/)
 
 ## Contextes
 
@@ -19,7 +19,7 @@ Vocabulary and JSON-LD context used by wet-boew.
 
 ### Vocabularies
 
-* [Accessibility Conformance Reporting - ACR](arc/)
+* [Accessibility Conformance Reporting - ACR](acr/)
 
 ## Contexts
 

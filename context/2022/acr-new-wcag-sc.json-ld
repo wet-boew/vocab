@@ -8,7 +8,7 @@
 	"earl":"http://www.w3.org/ns/earl#",
 	"WCAG21":"http://www.w3.org/TR/WCAG21/#",
 	"WCAG22":"http://www.w3.org/TR/WCAG22/#",
-	"x-wb":"http://wet-boew.github.io/vocab/sandbox#",
+	"wb-acr":"http://wet-boew.github.io/vocab/acr/#",
 	
 	"WCAG21:orientation": { "@type": "earl:TestRequirement" },
 	"WCAG21:identify-input-purpose": { "@type": "earl:TestRequirement" },
@@ -113,21 +113,21 @@
 	"WCAG22Tech:failures/F108": { "@type": "earl:TestCase" },
 	
 
-	"id": { "@id":"x-wb:id", "@type": "xsd:positiveInteger" },
+	"reportId": { "@id":"wb-acr:reportId", "@type": "xsd:positiveInteger" },
 	"assessment": { "@id": "dct:title" },
 
 	"subjectUrl": { "@id": "http://schema.org/url", "@type": "@id" },
 
-	"assertedBy": { "@id": "x-wb:assertedBy", "@type": "xsd:string" },
+	"assertedBy": { "@id": "wb-acr:assertedBy", "@type": "xsd:string" },
 	"earl:assertedBy": { "@type": "@id" },
 
-	"score": { "@id": "x-wb:score", "@type": "xsd:string" },
+	"score": { "@id": "wb-acr:score", "@type": "xsd:string" },
 	"results": { "@id": "earl:result", "@type": "earl:TestResult" },
 
 	"earl:test": { "@type": "@id" },
 	"techniques": { "@id": "earl:test", "@type": "@id" },
 	"advisory": { "@id": "earl:test", "@type": "@id" },
-	"outcome": { "@id": "x-wb:outcome", "@type": "xsd:string" },
+	"outcome": { "@id": "wb-acr:outcome", "@type": "xsd:string" },
 
 	"label": { "@id": "dct:title" },
 	"notes": { "@id": "dcterms:description" },

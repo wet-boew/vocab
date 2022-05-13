@@ -13,7 +13,7 @@ Additional vocabulary term used by wet-bew project for producing accessibilty co
 * `gh:` [GitHub](http://github.com/)
 
 ## JSON-LD contexts
-* [2022 ARC reporting limited on WCAG Success Criteria Level A and Level AA added with WCAG 2.1 and WCAG 2.2](../context/2022/arc.json-ld)
+* [2022 ARC reporting limited on WCAG Success Criteria Level A and Level AA added with WCAG 2.1 and WCAG 2.2](../context/2022/arc-new-wacg-sc.json-ld)
 
 ## Vocabulary terms
 

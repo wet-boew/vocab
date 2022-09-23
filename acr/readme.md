@@ -17,12 +17,6 @@ Additional vocabulary term used by wet-bew project for producing accessibilty co
 
 ## Vocabulary terms
 
-### `assertedBy`
-(**State:** *Prototype*)
-Property - Human readable string of the assessor name
-
-**Current status:** Going to be replaced by foaf:name attached to the earl:mainAssertor property
-
 ### `score`
 (**State:** *Prototype*)
 Assessment results percentage score
@@ -35,7 +29,48 @@ Property - Human readable string of the test result.
 (**State:** *Prototype*)
 Property - Positive integer identifying the report among other report for the site, project or.
 
+### `Revision`
 
+(**State:** *Prototype*)
+
+Class - Review report of the completed assertion that implement the class `earl:Assertor` and `earl:TestResult`.
+
+<details>
+<summary>Alternate description in turtle</summary>
+
+```
+wb-arc:Revision
+	a rdf:Class ;
+	a earl:Assertor ;
+	a earl:TestResult ;
+	rdfs:label "Revision" ;
+	rdfs:comment "Review report of the completed assertion" .
+```
+
+</details>
+
+
+### `review`
+
+(**State:** *Prototype*)
+
+Property - Review of an assesment
+
+Domain: `Assertion`
+Range: `Revision`
+
+<details>
+<summary>Alternate description in turtle</summary>
+
+```
+wb-arc:review
+	a rdf:Property ;
+	rdfs:domain earl:Assertion ;
+	rdfs:range wb-arc:Revision 
+	rdfs:label "Review" .
+```
+
+</details>
 
 ### `severity`
 
@@ -89,7 +124,36 @@ Class - A value or expression that describes the underpinning of the described i
 * `opinionated`: Opinionated - Issue based on the user habit assumption. MAY require more investigation. (Evidence -> Link to non-official documents like blog post)
 * `comments`: Comments - Remark that MUST require more investigation. (Evidence -> None or with link to non-official documents like blog post)
 
----
+
+## Vocabulary extension/specialization
+
+### `earl:mode`
+
+(**State:** *Prototype*)
+
+Originally defined: [https://www.w3.org/TR/EARL/#mode](https://www.w3.org/TR/EARL/#mode)
+
+```
+earl:mode
+	a rdf:Property ;
+	rdfs:domain [ earl:Assertion, wb-arc:Revision ] ;
+	rdfs:range earl:TestMode .
+```
+
+## Outdated prototyped term
+
+<details>
+<summary>View the outdated prototyped term</summary>
+
+### `assertedBy`
+(**State:** *Outdated Prototype* on 2022-09-23)
+Property - Human readable string of the assessor name
+
+**Current status:** Going to be replaced by foaf:name attached to the earl:mainAssertor property
+
+</details>
+
+----
 
 ## Sample report
 

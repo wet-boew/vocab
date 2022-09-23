@@ -17,7 +17,7 @@ Vocabulaire et context JSON-LD utilisé par la wet-boew. Tout problèmes ou ques
 
 ## Contextes
 
-* [2022 - ACR pour les nouveau critère de mérite du WCAG](context/2022/acr-new-wcag-sc.json-ld) ([Code source](https://github.com/wet-boew/vocab/blob/main/context/2022/acr-new-wcag-sc.json-ld))
+* [2022 - ACR pour les nouveau critère de mérite du WCAG](context/2022/acr-new-wcag-sc.json-ld) ([Code source](https://github.com/wet-boew/vocab/blob/main/context/2022/acr-new-wcag-sc.json-ld)) - Prototyping
   * URL: `https://wet-boew.github.io/vocab/context/2022/acr-new-wcag-sc.json-ld`
 
 ---
@@ -39,5 +39,5 @@ Vocabulary and JSON-LD context used by wet-boew. Issues or questions can be aske
 
 ## Contexts
 
-* [2022 - ACR for new WCAG Success Criterion](context/2022/acr-new-wcag-sc.json-ld) ([Source code](https://github.com/wet-boew/vocab/blob/main/context/2022/acr-new-wcag-sc.json-ld))
+* [2022 - ACR for new WCAG Success Criterion](context/2022/acr-new-wcag-sc.json-ld) ([Source code](https://github.com/wet-boew/vocab/blob/main/context/2022/acr-new-wcag-sc.json-ld)) - Prototyping
   * URL: `https://wet-boew.github.io/vocab/context/2022/acr-new-wcag-sc.json-ld`

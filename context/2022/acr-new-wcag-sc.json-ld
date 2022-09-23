@@ -118,8 +118,11 @@
 
 	"subjectUrl": { "@id": "http://schema.org/url", "@type": "@id" },
 
-	"assertedBy": { "@id": "wb-acr:assertedBy", "@type": "xsd:string" },
-	"earl:assertedBy": { "@type": "@id" },
+	"assertedBy": { "@id": "earl:assertedBy", "@type": "earl:Assertor" },
+	"producedBy": { "@id": "earl:mainAssertor", "@type": "earl:Assertor" },
+	"name": { "@id": "foaf:name" },
+	"page": { "@id": "foaf:page" },
+	"revisedBy": { "@id": "wb-acr:review", "@type": "wb-arc:Revision" },
 
 	"score": { "@id": "wb-acr:score", "@type": "xsd:string" },
 	"results": { "@id": "earl:result", "@type": "earl:TestResult" },
@@ -129,6 +132,7 @@
 	"advisory": { "@id": "earl:test", "@type": "@id" },
 	"outcome": { "@id": "wb-acr:outcome", "@type": "xsd:string" },
 
+	"info": { "@id": "earl:info" },
 	"label": { "@id": "dct:title" },
 	"notes": { "@id": "dcterms:description" },
 	"date": { "@id": "dcterms:date" },

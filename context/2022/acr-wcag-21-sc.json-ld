@@ -508,7 +508,7 @@
 	"notes": { "@id": "dcterms:description" },
 	"date": { "@id": "dcterms:date" },
 	
-	"earl:mode": { "@type": "@id" }
+	"earl:mode": { "@type": "@id" },
 
   "severity": { "@id": "wb-acr:severity", "@type": "wb-arc:SeverityValue" },
 

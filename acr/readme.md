@@ -78,7 +78,7 @@ wb-arc:review
 
 Property - Scale of importance that identify how the described issue directly impact the user in order to complete the main task of the page or the main task of the screen (ex. popup, tabs).
 
-**Domain**: `earl:TestResult`
+**Domain**: `earl:TestResult`, `wb-arc:WorkItem`
 **Range**: SeverityValue
 
 ### `relevancy`
@@ -86,7 +86,7 @@ Property - Scale of importance that identify how the described issue directly im
 (**State:** *Prototype*)
 Property - Identify the underpinning that led to the issue described in the test result.
 
-**Domain**: `earl:TestResult`
+**Domain**: `earl:TestResult`, `wb-arc:WorkItem`
 **Range**: RelevancyValue
 
 ### `SeverityValue`
@@ -125,6 +125,27 @@ Class - A value or expression that describes the underpinning of the described i
 * `opinionated`: Opinionated - Issue based on the user habit assumption. MAY require more investigation. (Evidence -> Link to non-official documents like blog post)
 * `comments`: Comments - Remark that MUST require more investigation. (Evidence -> None or with link to non-official documents like blog post)
 
+### `WorkItem`
+
+(**State:** *Prototype*)
+
+Class - Describe a work item resulting from one or more Revision with the objective to fix a failure and/or to improve the compliance of the assessed subject.
+
+It is recommended to provide additional information about the *Work Item* by using the following properties from external vocabularies:
+
+* `dcterms:title` - Human readable title of the work item
+* `dcterms:description` - Human readable description of the work item.
+* `dcterms:references` - URI pointing to the discussion and tracking of the work item. For example a link to a corresponding GitHub issue.
+* `earl:test` - Success Criterion ids being worked on or impacted by this Work Item.
+
+### `task`
+
+(**State:** *Prototype*)
+
+Property - Associate the Work Item with an assertion
+
+**Domain**: `earl:Assertion`
+**Range**: WorkItem
 
 ## Vocabulary extension/specialization
 
@@ -140,6 +161,77 @@ earl:mode
 	rdfs:domain [ earl:Assertion, wb-arc:Revision ] ;
 	rdfs:range earl:TestMode .
 ```
+
+### `earl:result`
+
+(**State:** *Prototype*)
+
+Originally defined: [https://www.w3.org/TR/EARL/#result](https://www.w3.org/TR/EARL/#result)
+
+```
+earl:result
+	a rdf:Property ;
+	rdfs:domain [ earl:Assertion, wb-arc:Revision ] ;
+	rdfs:range earl:TestResult .
+```
+
+### `earl:test`
+
+(**State:** *Prototype*)
+
+Originally defined: [https://www.w3.org/TR/EARL/#test](https://www.w3.org/TR/EARL/#test)
+
+```
+earl:test
+	a rdf:Property ;
+	rdfs:domain [ earl:Assertion, wb-arc:WorkItem ] ;
+	rdfs:range earl:TestCriterion .
+```
+
+### `earl:pointer`
+
+(**State:** *Prototype*)
+
+Originally defined: [https://www.w3.org/TR/EARL/#pointer](https://www.w3.org/TR/EARL/#pointer)
+
+```
+earl:pointer
+	a rdf:Property ;
+	rdfs:domain [ earl:TestResult, wb-arc:WorkItem ] ;
+	rdfs:range ptr:Pointer .
+```
+
+## Additional information to complement instances description
+
+(**State:** *Prototype*)
+
+### For `wb-arc:WorkItem`
+
+* Provide a list of the Success Criterion being addressed and/or impacted (`earl:test`)
+* Provide a resource description with dublin core vocabularies
+* Provide an URL to where that work item are going to be discussed and addressed.
+
+### For `earl:Assertion`
+
+* Provide a resource description with dublin core vocabularies
+* Identify the end of live of this report iteration
+  * If we don't know it's replacement - use `schema:expires` with a date value
+  * If we know a new fresh report was created for the same subject - `dcterms:isReplacedBy` with an url to the replacement ACR
+  * If there is a subsequent report, which is about to follow up and closing the work items identified - `dcterms:hasVersion` with an url to the followed up ACR (reverse property - `dcterms:isVersionOf`)
+
+The following properties might require to be review, see the discussion in the wet-boew issue #9271
+* `subjectUrl`: Currently use the schema.org `schema:url` but should we leverage dublin core `dcterms:references` instead?
+
+### For `earl:test` in `earl:Assertion` combined with `earl:TestResult`
+
+(related to provide more detaile about more specific test on a Success Criterion which has a broader scope)
+
+List only the test (techniques) which has been fully applied and/or beign discussed in the Test Result description.
+
+### For `earl:test` in `wb-arc:WorkItem`
+
+List only the test (techniques) which has going to be impacted by the Work Item.
+
 
 ## Outdated prototyped term
 

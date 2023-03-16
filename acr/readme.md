@@ -102,8 +102,8 @@ Class - A value or expression that describes the importance of the impact on the
 * `moderate`: The user can complete the task. This test result is considered an accessibility issue that yields less impact for users. For example, the WCAG Success Criterion are met based on it statement and all related faillure are avoided. But still, some sufficient technique (advisory or not) can be applied or/and some compatibility fix could be applied to enhance the user experience with assistive technology. A Test result marked with a moderate severity still pass the test.
 * `trivial`: This is a non-issue. The user can complete the task. For example, WCAG Success Criterion are fully met, applicable sufficient technical are applied and all related failure are avoided. A Test result marked with a trivial severity pass the test.
 * `forSeverityEvaluation`: The servery for the current item need to be evaluated, measured and updated.
-* `severityNotPertinent`: Defining the severity would not provide any benefit to the current item.
-* `undefinedSeverity`: The severity value has not been looked at or are not defined yet.
+* `severityNotPertinent`: Defining the severity would not provide any benefit at the current item.
+* `noSeverity`: The severity value has not been looked at or is not defined yet.
 
 
 ### `RelevancyValue`
@@ -129,8 +129,8 @@ Class - A value or expression that describes the underpinning of the described i
 * `opinionated`: Opinionated - Issue based on the user habit assumption. MAY require more investigation. (Evidence -> Link to non-official documents like blog post)
 * `comments`: Comments - Remark that MUST require more investigation. (Evidence -> None or with link to non-official documents like blog post)
 * `forRelevancyEvaluation`: The relevancy for the current item need to be evaluated, measured and updated.
-* `relevancyNotPertinent`: Defining the relevancy would not provide any benefit to the current item.
-* `undefinedRelevancy`: The relevancy value has not been looked at or are not defined yet.
+* `relevancyNotPertinent`: Defining the relevancy would not provide any benefit at the current item.
+* `noRelevancy`: The relevancy value has not been looked at or is not defined yet.
 
 ### `WorkItem`
 

@@ -100,7 +100,11 @@ Class - A value or expression that describes the importance of the impact on the
 * `critical`: The user are unable to complete the task. This results in blocked essential content for individuals with disabilities. For example, the WCAG Success Criterion are not met and at least one faillure is applicable maining it block essential content to users. A Test result marked with a serious severity fail the test.
 * `serious`: The user are able to complete partially the task where some non-essential content related to the task is inaccessible. This results in severe barriers for individuals with diabilities. For example, the WCAG Success Criterion are not met according to its statement and all related faillure are avoided where the main content remain functional and operational for some users (with or without AT). A Test result marked with a serious serverity fail the test.
 * `moderate`: The user can complete the task. This test result is considered an accessibility issue that yields less impact for users. For example, the WCAG Success Criterion are met based on it statement and all related faillure are avoided. But still, some sufficient technique (advisory or not) can be applied or/and some compatibility fix could be applied to enhance the user experience with assistive technology. A Test result marked with a moderate severity still pass the test.
-* `trivial`: This is a non-issue. The user can complete the task. For example, WCAG Success Criterion are fully met, applicable sufficient technical are applied and all related failure are avoided. A Test result marked with a trivial severity pass the test. 
+* `trivial`: This is a non-issue. The user can complete the task. For example, WCAG Success Criterion are fully met, applicable sufficient technical are applied and all related failure are avoided. A Test result marked with a trivial severity pass the test.
+* `forSeverityEvaluation`: The servery for the current item need to be evaluated, measured and updated.
+* `severityNotPertinent`: Defining the severity would not provide any benefit to the current item.
+* `undefinedSeverity`: The severity value has not been looked at or are not defined yet.
+
 
 ### `RelevancyValue`
 
@@ -124,6 +128,9 @@ Class - A value or expression that describes the underpinning of the described i
 * `expertise`: Expertise - Recommendation made by a recognized expert. (Evidence -> Formal references to official documents/practice/standards/industry best practices from trusted/validated source)
 * `opinionated`: Opinionated - Issue based on the user habit assumption. MAY require more investigation. (Evidence -> Link to non-official documents like blog post)
 * `comments`: Comments - Remark that MUST require more investigation. (Evidence -> None or with link to non-official documents like blog post)
+* `forRelevancyEvaluation`: The relevancy for the current item need to be evaluated, measured and updated.
+* `relevancyNotPertinent`: Defining the relevancy would not provide any benefit to the current item.
+* `undefinedRelevancy`: The relevancy value has not been looked at or are not defined yet.
 
 ### `WorkItem`
 

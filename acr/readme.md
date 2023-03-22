@@ -4,6 +4,7 @@ Additional vocabulary term used by wet-bew project for producing accessibilty co
 
 ## Related vocabulary
 * `earl:` [Evaluation and Report Language (EARL) 1.0 Schema](https://www.w3.org/TR/EARL/)
+* `wcagem:` [Website Accessibility Conformance Evaluation Methodology (WCAG-EM) 1.0](http://www.w3.org/TR/WCAG-EM/#)
 * `WCAG21:` [Web Content Accessibility Guidelines (WCAG) 2.1](http://www.w3.org/TR/WCAG21/#)
 * `WCAG22:` [Web Content Accessibility Guidelines (WCAG) 2.2](http://www.w3.org/TR/WCAG22/#)
 * `dcterms:` [Dublin Core - DCMI Metadata Terms](http://purl.org/dc/terms/)
@@ -97,7 +98,7 @@ Class - A value or expression that describes the importance of the impact on the
 
 #### Instances
 
-* `critical`: The user are unable to complete the task. This results in blocked essential content for individuals with disabilities. For example, the WCAG Success Criterion are not met and at least one faillure is applicable maining it block essential content to users. A Test result marked with a serious severity fail the test.
+* [`critical`](#critical): The user are unable to complete the task. This results in blocked essential content for individuals with disabilities. For example, the WCAG Success Criterion are not met and at least one faillure is applicable maining it block essential content to users. A Test result marked with a serious severity fail the test.
 * `serious`: The user are able to complete partially the task where some non-essential content related to the task is inaccessible. This results in severe barriers for individuals with diabilities. For example, the WCAG Success Criterion are not met according to its statement and all related faillure are avoided where the main content remain functional and operational for some users (with or without AT). A Test result marked with a serious serverity fail the test.
 * `moderate`: The user can complete the task. This test result is considered an accessibility issue that yields less impact for users. For example, the WCAG Success Criterion are met based on it statement and all related faillure are avoided. But still, some sufficient technique (advisory or not) can be applied or/and some compatibility fix could be applied to enhance the user experience with assistive technology. A Test result marked with a moderate severity still pass the test.
 * `trivial`: This is a non-issue. The user can complete the task. For example, WCAG Success Criterion are fully met, applicable sufficient technical are applied and all related failure are avoided. A Test result marked with a trivial severity pass the test.

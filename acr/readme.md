@@ -98,13 +98,33 @@ Class - A value or expression that describes the importance of the impact on the
 
 #### Instances
 
-* [`critical`](#critical): The user are unable to complete the task. This results in blocked essential content for individuals with disabilities. For example, the WCAG Success Criterion are not met and at least one faillure is applicable maining it block essential content to users. A Test result marked with a serious severity fail the test.
-* `serious`: The user are able to complete partially the task where some non-essential content related to the task is inaccessible. This results in severe barriers for individuals with diabilities. For example, the WCAG Success Criterion are not met according to its statement and all related faillure are avoided where the main content remain functional and operational for some users (with or without AT). A Test result marked with a serious serverity fail the test.
-* `moderate`: The user can complete the task. This test result is considered an accessibility issue that yields less impact for users. For example, the WCAG Success Criterion are met based on it statement and all related faillure are avoided. But still, some sufficient technique (advisory or not) can be applied or/and some compatibility fix could be applied to enhance the user experience with assistive technology. A Test result marked with a moderate severity still pass the test.
-* `trivial`: This is a non-issue. The user can complete the task. For example, WCAG Success Criterion are fully met, applicable sufficient technical are applied and all related failure are avoided. A Test result marked with a trivial severity pass the test.
-* `forSeverityEvaluation`: The servery for the current item need to be evaluated, measured and updated.
-* `severityNotPertinent`: Defining the severity would not provide any benefit at the current item.
-* `noSeverity`: The severity value has not been looked at or is not defined yet.
+##### `critical`
+
+The user are unable to complete the task. This results in blocked essential content for individuals with disabilities. For example, the WCAG Success Criterion are not met and at least one faillure is applicable maining it block essential content to users. A Test result marked with a serious severity fail the test.
+
+##### `serious`
+
+The user are able to complete partially the task where some non-essential content related to the task is inaccessible. This results in severe barriers for individuals with diabilities. For example, the WCAG Success Criterion are not met according to its statement and all related faillure are avoided where the main content remain functional and operational for some users (with or without AT). A Test result marked with a serious serverity fail the test.
+
+##### `moderate`
+
+The user can complete the task. This test result is considered an accessibility issue that yields less impact for users. For example, the WCAG Success Criterion are met based on it statement and all related faillure are avoided. But still, some sufficient technique (advisory or not) can be applied or/and some compatibility fix could be applied to enhance the user experience with assistive technology. A Test result marked with a moderate severity still pass the test.
+
+##### `trivial`
+
+This is a non-issue. The user can complete the task. For example, WCAG Success Criterion are fully met, applicable sufficient technical are applied and all related failure are avoided. A Test result marked with a trivial severity pass the test.
+
+##### `forSeverityEvaluation`
+
+The servery for the current item need to be evaluated, measured and updated.
+
+##### `severityNotPertinent`
+
+Defining the severity would not provide any benefit at the current item.
+
+##### `noSeverity`
+
+The severity value has not been looked at or is not defined yet.
 
 
 ### `RelevancyValue`
@@ -115,23 +135,73 @@ Class - A value or expression that describes the underpinning of the described i
 
 #### Instances
 
-* `legislative`: Legislative (Evidence -> Citation of the law/regulation along with the applicable article)
-* `failures`: WCAG Failures (Evidence -> The Failure number)
-* `techniques`: WCAG Sufficient Technique (Evidence -> The sufficient technique number)
-* `techniques-advisory`: WCAG Advisor Technique (Evidence -> The sufficient technique number)
-* `criteria`: WCAG Success Criteria Statement (Evidence -> The formal WCAG success criterion statement)
-* `compatibility-fail`: Assistive technology and browser compatibility blocking the user to complete the main task (Evidence -> Software name with its version. All the details step on how to reproduce along with the unexpected and expected result)
-* `compatibility-browser`: Browser compatibility (Evidence -> Software name with its version. All the details step on how to reproduce along with the unexpected and expected result)
-* `compatibility`: Assistive technology compatibility (Evidence -> Software name with its version. All the details step on how to reproduce along with the unexpected and expected result)
-* `usability-fail`: Usability supported with public and reproducible user research. (Evidence -> Link to the public research)
-* `usability-limited`: Usability supported with private user research report or limited sampling. (Evidence -> Instructions on how to retrieve/consult the research)
-* `usability`: Usability with lost or unavailable or forgotten research document. (Evidence -> Last known place with a justification of why it is lost/unavailable/forgotten)
-* `expertise`: Expertise - Recommendation made by a recognized expert. (Evidence -> Formal references to official documents/practice/standards/industry best practices from trusted/validated source)
-* `opinionated`: Opinionated - Issue based on the user habit assumption. MAY require more investigation. (Evidence -> Link to non-official documents like blog post)
-* `comments`: Comments - Remark that MUST require more investigation. (Evidence -> None or with link to non-official documents like blog post)
-* `forRelevancyEvaluation`: The relevancy for the current item need to be evaluated, measured and updated.
-* `relevancyNotPertinent`: Defining the relevancy would not provide any benefit at the current item.
-* `noRelevancy`: The relevancy value has not been looked at or is not defined yet.
+##### `legislative`
+
+Legislative (Evidence -> Citation of the law/regulation along with the applicable article)
+
+##### `failures`
+
+WCAG Failures (Evidence -> The Failure number)
+
+##### `techniques`
+
+WCAG Sufficient Technique (Evidence -> The sufficient technique number)
+
+##### `techniques-advisory`
+
+WCAG Advisor Technique (Evidence -> The sufficient technique number)
+
+##### `criteria`
+
+WCAG Success Criteria Statement (Evidence -> The formal WCAG success criterion statement)
+
+##### `compatibility-fail`
+
+Assistive technology and browser compatibility blocking the user to complete the main task (Evidence -> Software name with its version. All the details step on how to reproduce along with the unexpected and expected result)
+
+##### `compatibility-browser`
+
+Browser compatibility (Evidence -> Software name with its version. All the details step on how to reproduce along with the unexpected and expected result)
+
+##### `compatibility`
+
+Assistive technology compatibility (Evidence -> Software name with its version. All the details step on how to reproduce along with the unexpected and expected result)
+
+##### `usability-fail`
+
+Usability supported with public and reproducible user research. (Evidence -> Link to the public research)
+
+##### `usability-limited`
+
+Usability supported with private user research report or limited sampling. (Evidence -> Instructions on how to retrieve/consult the research)
+
+##### `usability`
+
+Usability with lost or unavailable or forgotten research document. (Evidence -> Last known place with a justification of why it is lost/unavailable/forgotten)
+
+##### `expertise`
+
+Expertise - Recommendation made by a recognized expert. (Evidence -> Formal references to official documents/practice/standards/industry best practices from trusted/validated source)
+
+##### `opinionated`
+
+Opinionated - Issue based on the user habit assumption. MAY require more investigation. (Evidence -> Link to non-official documents like blog post)
+
+##### `comments`
+
+Comments - Remark that MUST require more investigation. (Evidence -> None or with link to non-official documents like blog post)
+
+##### `forRelevancyEvaluation`
+
+The relevancy for the current item need to be evaluated, measured and updated.
+
+##### `relevancyNotPertinent`
+
+Defining the relevancy would not provide any benefit at the current item.
+
+##### `noRelevancy`
+
+The relevancy value has not been looked at or is not defined yet.
 
 ### `WorkItem`
 

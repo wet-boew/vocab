@@ -571,7 +571,7 @@
   "producedBy": { "@id": "earl:mainAssertor", "@type": "earl:Assertor" },
   "name": { "@id": "foaf:name" },
   "page": { "@id": "foaf:page" },
-  "review": { "@id": "wb-acr:review", "@type": "wb-arc:Revision" },
+  "review": { "@id": "wb-acr:review", "@type": "wb-acr:Revision" },
 
   "aggregatedScore": { "@id": "wb-acr:score", "@type": "wcagem:step5d" },
   "results": { "@id": "earl:result", "@type": "earl:TestResult" },
@@ -587,12 +587,13 @@
 
   "earl:mode": { "@type": "@id" },
 
-  "severity": { "@id": "wb-acr:severity", "@type": "wb-arc:SeverityValue" },
-  "relevancy": { "@id": "wb-acr:relevancy", "@type": "wb-arc:RelevancyValue" },
+  "severity": { "@id": "wb-acr:severity", "@type": "wb-acr:SeverityValue" },
+  "relevancy": { "@id": "wb-acr:relevancy", "@type": "wb-acr:RelevancyValue" },
   
-  "workitems": { "@id": "wb-arc:task", "@type": "wb-arc:WorkItem" },
+  "workitems": { "@id": "wb-acr:task", "@type": "wb-acr:WorkItem" },
   "title": { "@id": "dcterms:title" },
   "description": { "@id": "dcterms:description" },
-  "issue": { "@id": "dcterms:references", "@type": "@id" }
+  "issue": { "@id": "dcterms:references", "@type": "@id" },
+  "toResolveTest": { "@id": "wb-acr:toResolveTest", "@type": "@id" }
  }
 }

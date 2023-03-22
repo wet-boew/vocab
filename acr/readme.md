@@ -14,7 +14,8 @@ Additional vocabulary term used by wet-bew project for producing accessibilty co
 * `gh:` [GitHub](http://github.com/)
 
 ## JSON-LD contexts
-* [2022 ARC reporting limited on WCAG Success Criteria Level A and Level AA added with WCAG 2.1 and WCAG 2.2](../context/2022/acr-new-wcag-sc.json-ld) (**State:** *Prototype*)
+* [2023 ARC reporting WCAG Success Criteria 2.1 Level A and Level AA](../context/2023/acr.json-ld) (**State:** *Prototype*)
+* 2023 ARC edge - with WCAG 2.2
 
 ## Vocabulary terms
 
@@ -223,7 +224,17 @@ It is recommended to provide additional information about the *Work Item* by usi
 Property - Associate the Work Item with an assertion
 
 **Domain**: `earl:Assertion`
-**Range**: WorkItem
+**Range**: `WorkItem`
+
+
+### `toResolveTest`
+
+(**State:** *Prototype*)
+
+Property - Associate the test which the WorkItem are going to resolve once completed.
+
+**Domain**: `WorkItem`
+**Range**: `earl:TestCriterion`
 
 ## Vocabulary extension/specialization
 

@@ -30,8 +30,9 @@ title: Relevancies extension for accessibility conformance report
     <li>Not specified | <span lang="fr">Non précisé</span>: <code>wbv:acr#noRelevancy</code></li>
   </ul>
 
+  <h2>About compatibility</h2>
   <section id="compatibility-fail" resource="#compatibility-fail" typeof="acr:RelevancyValue skos:Concept">
-    <h2 property="skos:prefLabel dct:title">Assistive technology and browser compatibility fail</h2>
+    <h3 property="skos:prefLabel dct:title">Assistive technology and browser compatibility fail</h3>
     <dl>
       <dt>Resource id</dt>
       <dd><code>#compatibility-fail</code></dd>
@@ -47,7 +48,7 @@ title: Relevancies extension for accessibility conformance report
   </section>
 
   <section id="compatibility-browser" resource="#compatibility-browser" typeof="acr:RelevancyValue skos:Concept">
-    <h2 property="skos:prefLabel dct:title">Browser compatibility</h2>
+    <h3 property="skos:prefLabel dct:title">Browser compatibility</h3>
     <dl>
       <dt>Resource id</dt>
       <dd><code>#compatibility-browser</code></dd>
@@ -63,7 +64,7 @@ title: Relevancies extension for accessibility conformance report
   </section>
 
   <section id="compatibility-at" resource="#compatibility-at" typeof="acr:RelevancyValue skos:Concept">
-    <h2 property="skos:prefLabel dct:title">Assistive technology compatibility</h2>
+    <h3 property="skos:prefLabel dct:title">Assistive technology compatibility</h3>
     <dl>
       <dt>Resource id</dt>
       <dd><code>#compatibility-at</code></dd>
@@ -78,33 +79,34 @@ title: Relevancies extension for accessibility conformance report
     </dl>
   </section>
 
-  <section id="usability-fail" resource="#usability-fail" typeof="acr:RelevancyValue skos:Concept">
-    <h2 property="skos:prefLabel dct:title">Usability supported with public and reproducible user research</h2>
+  <h2>About usability</h2>
+  <section id="usability-issue" resource="#usability-issue" typeof="acr:RelevancyValue skos:Concept">
+    <h3 property="skos:prefLabel dct:title">Usability issue supported with public and reproducible user research</h3>
     <dl>
       <dt>Resource id</dt>
-      <dd><code>#usability-fail</code></dd>
+      <dd><code>#usability-issue</code></dd>
       <dt>Type of</dt>
       <dd><code>acr:RelevancyValue skos:Concept</code></dd>
       <dt>English label</dt>
-      <dd>Usability supported with public and reproducible user research</dd>
+      <dd>Usability issue supported with public and reproducible user research</dd>
       <dt>French label</dt>
       <dd property="skos:prefLabel dct:title" lang="fr">Problème de convivialité supporté par de la recherche utilisateur public et reproductible</dd>
       <dt>WET-BOEW ACR methodology reference</dt>
-      <dd><code>wbv:acr/relevancies/usability-fail</code></dd>
+      <dd><code>wbv:acr/relevancies/usability-issue</code></dd>
     </dl>
   </section>
 
   <section id="usability-limited" resource="#usability-limited" typeof="acr:RelevancyValue skos:Concept">
-    <h2 property="skos:prefLabel dct:title">Usability supported with private user research report or limited sampling.</h2>
+    <h3 property="skos:prefLabel dct:title">Usability issue supported with private user research report or limited sampling.</h3>
     <dl>
       <dt>Resource id</dt>
       <dd><code>#usability-limited</code></dd>
       <dt>Type of</dt>
       <dd><code>acr:RelevancyValue skos:Concept</code></dd>
       <dt>English label</dt>
-      <dd>Usability supported with private user research report or limited sampling.</dd>
+      <dd>Usability issue supported with private user research report or limited sampling.</dd>
       <dt>French label</dt>
-      <dd property="skos:prefLabel dct:title" lang="fr">Convivialité supporté avec de la recherche utilisateur privé ou avec une échantillonage limité.</dd>
+      <dd property="skos:prefLabel dct:title" lang="fr">Problème de convivialité supporté avec de la recherche utilisateur privé ou avec une échantillonage limité.</dd>
       <dt>WET-BOEW ACR methodology reference</dt>
       <dd><code>wbv:acr/relevancies/usability-limited</code></dd>
     </dl>

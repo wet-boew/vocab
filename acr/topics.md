@@ -7,6 +7,16 @@ title: Topics for accessibility conformance report
   <h1>Topics for accessibility conformance report</h1>
   <p>List of topics used for asessment related to an accessibility conformance report</p>
 
+  <p>Prefix used through this page:</p>
+  <ul>
+    <li><code>acr:</code> <a href="https://wet-boew.github.io/vocab/acr#">https://wet-boew.github.io/vocab/acr#</a></li>
+    <li><code>wbv:</code> <a href="https://wet-boew.github.io/vocab/">https://wet-boew.github.io/vocab/</a></li>
+    <li><code>skos:</code> <a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a></li>
+  </ul>
+
+  <h2>Relevancies defined in the ACR core vocabularies</h2>
+  <p>None</p>
+  
   <section id="aria" resource="#aria" typeof="acr:Topic skos:Concept">
     <h2><span property="skos:prefLabel dct:title">Aria</span> (<code>#aria</code>)</h2>
     <dl>

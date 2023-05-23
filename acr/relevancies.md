@@ -5,7 +5,7 @@ title: Relevancies extension for accessibility conformance report
 
 <div prefix="acr: https://wet-boew.github.io/vocab/acr# wbv: https://wet-boew.github.io/vocab/">
   <h1>Relevancies extension for accessibility conformance report</h1>
-  <p>List of topics used for asessment related to an accessibility conformance report</p>
+  <p>List of relevancies used for asessment related to an accessibility conformance report</p>
 
   <p>Prefix used through this page:</p>
   <ul>

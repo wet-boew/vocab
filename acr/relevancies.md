@@ -31,22 +31,7 @@ title: Relevancies extension for accessibility conformance report
   </ul>
 
   <h2>About compatibility</h2>
-  <section id="compatibility-fail" resource="#compatibility-fail" typeof="acr:RelevancyValue skos:Concept">
-    <h3 property="skos:prefLabel dct:title">Assistive technology and browser compatibility fail</h3>
-    <dl>
-      <dt>Resource id</dt>
-      <dd><code>#compatibility-fail</code></dd>
-      <dt>Type of</dt>
-      <dd><code>acr:RelevancyValue skos:Concept</code></dd>
-      <dt>English label</dt>
-      <dd>Assistive technology and browser compatibility fail</dd>
-      <dt>French label</dt>
-      <dd property="skos:prefLabel dct:title" lang="fr">Problème de compatibilité de la technologie d'assistance et de compatibilité du navigateur</dd>
-      <dt>WET-BOEW ACR methodology reference</dt>
-      <dd><code>wbv:acr/relevancies/compatibility-fail</code></dd>
-    </dl>
-  </section>
-
+  
   <section id="compatibility-browser" resource="#compatibility-browser" typeof="acr:RelevancyValue skos:Concept">
     <h3 property="skos:prefLabel dct:title">Browser compatibility</h3>
     <dl>
@@ -60,6 +45,8 @@ title: Relevancies extension for accessibility conformance report
       <dd property="skos:prefLabel dct:title" lang="fr">Compatibilité du navigateur</dd>
       <dt>WET-BOEW ACR methodology reference</dt>
       <dd><code>wbv:acr/relevancies/compatibility-browser</code></dd>
+      <dt>Description</dt>
+      <dd>Evidence -> Browser name with its version. All the details step on how to reproduce along with the unexpected and expected result</dd>
     </dl>
   </section>
 
@@ -76,6 +63,8 @@ title: Relevancies extension for accessibility conformance report
       <dd property="skos:prefLabel dct:title" lang="fr">Compatibilité de la technologie adaptative</dd>
       <dt>WET-BOEW ACR methodology reference</dt>
       <dd><code>wbv:acr/relevancies/compatibility-at</code></dd>
+      <dt>Description</dt>
+      <dd>Evidence -> AT software name with its version and browser information. All the details step on how to reproduce along with the unexpected and expected result</dd>
     </dl>
   </section>
 
@@ -93,6 +82,8 @@ title: Relevancies extension for accessibility conformance report
       <dd property="skos:prefLabel dct:title" lang="fr">Problème de convivialité supporté par de la recherche utilisateur public et reproductible</dd>
       <dt>WET-BOEW ACR methodology reference</dt>
       <dd><code>wbv:acr/relevancies/usability-issue</code></dd>
+      <dt>Description</dt>
+      <dd>Evidence -> Link to the public research</dd>
     </dl>
   </section>
 
@@ -109,6 +100,8 @@ title: Relevancies extension for accessibility conformance report
       <dd property="skos:prefLabel dct:title" lang="fr">Problème de convivialité supporté avec de la recherche utilisateur privé ou avec une échantillonage limité.</dd>
       <dt>WET-BOEW ACR methodology reference</dt>
       <dd><code>wbv:acr/relevancies/usability-limited</code></dd>
+      <dt>Description</dt>
+      <dd>Evidence -> Instructions on how to retrieve/consult the research</dd>
     </dl>
   </section>
 
@@ -125,6 +118,8 @@ title: Relevancies extension for accessibility conformance report
       <dd property="skos:prefLabel dct:title" lang="fr">Législative</dd>
       <dt>WET-BOEW ACR methodology reference</dt>
       <dd><code>wbv:acr/relevancies/legislative</code></dd>
+      <dt>Description</dt>
+      <dd>Legislative (Evidence -> Citation of the law/regulation along with the applicable article)</dd>
     </dl>
   </section>
 

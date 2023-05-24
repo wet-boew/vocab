@@ -581,7 +581,7 @@ permalink: /context/2023/conformance-report-en.json-ld
   "acr:relevancy": { "@type": "acr:RelevancyValue" },
   "acr:requirement": { "@type": "earl:TestRequirement" },
   "acr:severity": { "@type": "acr:SeverityValue" },
-  "acr:standard": { "@type": "acr:ConformanceStandard " },
+  "acr:standard": { "@type": "acr:ConformanceStandard" },
   
   "assessments": {
     "@id": "acr:assessment",

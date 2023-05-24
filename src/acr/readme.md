@@ -235,7 +235,7 @@ Range: `acr:ConformanceRequirement`
 Property - A requirement defined by a standard
 
 Domain: `acr:ConformanceRequirement`, `wf:Task`
-Range: `acr:ConformanceStandard`
+Range: `earl:TestRequirement`
 
 ## `conformance`
 

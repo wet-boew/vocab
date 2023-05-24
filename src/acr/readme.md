@@ -45,7 +45,7 @@ Properties:
 * [audit](#audit)
 * [auditNote](#auditNote)
 * [conformance](#conformance)
-* [conformityCriteria](#conformityCriteria)
+* [conformity](#conformity)
 * [conformanceOption](#conformanceOption)
 * [involvesExpertise](#involvesExpertise)
 * [relevancy](#relevancy)

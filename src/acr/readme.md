@@ -86,11 +86,11 @@ Instances:
 * [notRelevant](#notRelevant) (of SeverityValue and RelevancyValue)
 * [notSatisfied](#notSatisfied) (of ConformanceState)
 * [opinionated](#opinionated) (of RelevancyValue)
-* [relevancy value extended list](relevancies) (of RelevancyValue)
+* [relevancy value extended list](/acr/relevancies) (of RelevancyValue)
 * [satisfied](#satisfied) (of ConformanceState)
 * [serious](#serious) (of SeverityValue)
 * [sufficient](#sufficient) (of RelevancyValue)
-* [topic list](topics) (of Topic)
+* [topic list](/acr/topics) (of Topic)
 * [trivial](#trivial) (of SeverityValue)
 * [usability](#usability) (of RelevancyValue)
 

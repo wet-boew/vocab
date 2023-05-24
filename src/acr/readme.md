@@ -261,7 +261,7 @@ Class - A conformance report.
 
 Property - A conformance result of a tested requirement
 
-Domain: `acr:ConformanceReport`
+Domain: `acr:ConformanceReport acr:AssessmentReport`
 Range: `acr:ConformanceStandard` (IRI identifying the standard)
 
 
@@ -280,7 +280,7 @@ Property - A conformance result of a tested requirement
 
 Instances can be found in [act:standard/profiles/](https://github.com/wet-boew/act-rules/tree/main/src/standard/profiles)
 
-Domain: `acr:ConformanceReport`
+Domain: `acr:ConformanceReport acr:AssessmentReport`
 Range: `acr:ConformanceOption` (IRI identifying the standard options)
 
 ### `ConformanceState`

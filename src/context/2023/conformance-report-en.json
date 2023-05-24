@@ -568,9 +568,13 @@ permalink: /context/2023/conformance-report-en.json-ld
   "WCAG2xTech:text/T2": { "@type": "earl:TestCase" },
   "WCAG2xTech:text/T3": { "@type": "earl:TestCase" },
 
+  "dct:references": { "@type": "@id" },
+  "dct:language": { "@type": "rdf:langString" },
+  
+  "acr:assessment": { "@type": "@id" },
+  
   "acr:accuracy": { "@type": "acr:AccuracyState" },
   "acr:aggregatedScore": { "@type": "wcagem:step5d" },
-  "acr:assessment": { "@type": "acr:AssessmentReport" },
   "acr:asset": { "@type": "https://www.rfc-editor.org/rfc/rfc2397#section-2" },
   "acr:audit": { "@type": "acr:AuditReport" },
   "acr:auditNote": { "@type": "acr:AuditReportNote" },

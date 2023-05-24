@@ -573,7 +573,7 @@ permalink: /context/2023/assessment-report-en.json-ld
   "acr:involvesExpertise": { "@type": "acr:Topic" },
   "acr:relevancy": { "@type": "acr:RelevancyValue" },
   "acr:severity": { "@type": "acr:SeverityValue" },
-  "acr:standard": { "@type": "acr:ConformanceStandard " },
+  "acr:standard": { "@type": "acr:ConformanceStandard" },
 
   "wbv:acr#advisory": { "@type": "acr:RelevancyValue" },
   "wbv:acr#comments": { "@type": "acr:RelevancyValue" },

@@ -60,6 +60,7 @@ Classes:
 * [AuditReportNote](#AuditReportNote)
 * [ConformanceReport](#ConformanceReport)
 * [ConformanceStandard](#ConformanceStandard)
+* [ConformanceState](#ConformanceState)
 * [RelevancyValue](#RelevancyValue)
 * [SeverityValue](#SeverityValue)
 
@@ -76,12 +77,15 @@ Instances:
 * [falseNegative](#falseNegative) (of AccuracyState)
 * [falsePositive](#falsePositive) (of AccuracyState)
 * [forEvaluation](#forEvaluation) (of SeverityValue and RelevancyValue)
+* [furtherTestNeeded](#furtherTestNeeded) (of ConformanceState)
 * [moderate](#moderate) (of SeverityValue)
 * [noRelevancy](#noRelevancy) (of RelevancyValue)
 * [noSeverity](#noSeverity) (of SeverityValue)
 * [notRelevant](#notRelevant) (of SeverityValue and RelevancyValue)
+* [notSatisfied](#notSatisfied) (of ConformanceState)
 * [opinionated](#opinionated) (of RelevancyValue)
 * [relevancy value extended list](relevancies) (of RelevancyValue)
+* [satisfied](#satisfied) (of ConformanceState)
 * [serious](#serious) (of SeverityValue)
 * [sufficient](#sufficient) (of RelevancyValue)
 * [topic list](topics) (of Topic)
@@ -269,6 +273,30 @@ Instances can be found in [act:standard/profiles/](https://github.com/wet-boew/a
 
 Domain: `acr:ConformanceReport`
 Range: `acr:ConformanceOption` (IRI identifying the standard options)
+
+### `ConformanceState`
+
+(**State:** *Prototype*)
+
+Class - State of a requirement conformity
+
+#### `satisfied`
+
+Instance - Requirement that is satisfied.
+
+Type of: `acr:ConformanceState`
+
+#### `notSatisfied`
+
+Instance - Requirement that is not satisfied.
+
+Type of: `acr:ConformanceState`
+
+#### `furtherTestNeeded`
+
+Instance - Requirement that futher testing is needed to determine if the requirement are going to be satified or not.
+
+Type of: `acr:ConformanceState`
 
 
 ### `ConformanceRequirement`

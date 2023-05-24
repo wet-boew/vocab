@@ -276,7 +276,7 @@ Class - A standard followed to conduct the conformance report.
 
 (**State:** *Prototype*)
 
-Property - A conformance result of a tested requirement
+Property - A conformance option used with a standard to establish a compliant to
 
 Instances can be found in [act:standard/profiles/](https://github.com/wet-boew/act-rules/tree/main/src/standard/profiles)
 

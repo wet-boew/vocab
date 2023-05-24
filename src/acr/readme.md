@@ -164,7 +164,7 @@ Range: `https://www.rfc-editor.org/rfc/rfc2397#section-2` (consisting into a lit
 Property - Accuracy of the item that has been audited
 
 Domain: `acr:AuditReportNote`
-Range: `acr:AccuracyValue`
+Range: `acr:AccuracyState`
 
 
 ### `AccuracyState`
@@ -175,15 +175,15 @@ Class - Accuracy state of item that has been audited
 
 #### `falsePositive`
 
-False positive result of an audited item
+Instance of `AccuracyState` - False positive result of an audited item.
 
 #### `falseNegative`
 
-False negative result of an audited item
+Instance of `AccuracyState` - False negative result of an audited item
 
 #### `accurate`
 
-Accurate result of an audited item
+Instance of `AccuracyState` - Accurate result of an audited item
 
 ### `AuditReport`
 

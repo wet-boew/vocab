@@ -1,5 +1,5 @@
 ---
-permalink: /acr/relevancies
+permalink: /acr
 title: ACR - Accessibility Conformance Report
 ---
 

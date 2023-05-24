@@ -56,6 +56,7 @@ Properties:
 Classes:
 
 * [AccuracyState](#AccuracyState)
+* [AssessmentReport](#AssessmentReport)
 * [AuditReport](#auditreport)
 * [AuditReportNote](#AuditReportNote)
 * [ConformanceReport](#ConformanceReport)
@@ -139,7 +140,14 @@ Vocabulary extension:
 Property - Assessment reference relating to the items
 
 Domain: `acr:AuditReport`, `acr:ConformanceReport`, `acr:ConformanceRequirement`
-Range: `earl:Assertion`
+Range: `acr:AssessmentReport`
+
+
+### `AssessmentReport`
+
+(**State:** *Prototype*)
+
+Class - Assessment report which is often also an `earl:Assertion`
 
 ### `asset`
 (**State:** *Prototype*)

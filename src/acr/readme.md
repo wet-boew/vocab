@@ -97,7 +97,7 @@ Vocabulary extension:
 
 ## Vocabularies
 
-<section id="aggregatedScore" resource="#aggregatedScore" typeof="rdf:Property skos:Concept">
+<section id="aggregatedScore" resource="#aggregatedScore" typeof="rdf:Property skos:Concept wcagem:step5d">
   <h3>Aggregated score</h3>
   <p>(<strong>State:</strong> <em>Prototype</em>)</p>
   <p>Property - Assessment results percentage score.</p>
@@ -106,7 +106,7 @@ Vocabulary extension:
 	<dt>Resource id</dt>
 	<dd><code>#aggregatedScore</code></dd>
 	<dt>Type of</dt>
-	<dd><code>rdf:Property skos:Concept</code></dd>
+	<dd><code>rdf:Property skos:Concept wcagem:step5d</code></dd>
 	<dt>Domain:</dt>
 	<dd>
 		<code>earl:Assertion</code>

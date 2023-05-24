@@ -10,11 +10,15 @@ title: ACR - Accessibility Conformance Report
 
   <h2>Related vocabulary</h2>
   <ul>
+    <li><code>acr:</code> <a href="https://wet-boew.github.io/vocab/acr/">Accesibility Conformance Report (this documents)</a></li>
+    <li><code>act:</code> <a href="https://wet-boew.github.io/act-rules/">Accessibility Conformance Testing rules</a></li>
+    <li><code>wbv:</code> <a href="https://wet-boew.github.io/vocab/">WET-BOEW vocabulary</a></li>
     <li><code>earl:</code> <a href="https://www.w3.org/TR/EARL/">Evaluation and Report Language (EARL) 1.0 Schema</a></li>
-    <li><code>wcagem:</code> <a href="http://www.w3.org/TR/WCAG-EM/#">Website Accessibility Conformance Evaluation Methodology (WCAG-EM) 1.0</a></li>
+    <li><code>dcterms:</code> <a href="http://purl.org/dc/terms/">Dublin Core - DCMI Metadata Terms</a></li>
     <li><code>WCAG21:</code> <a href="http://www.w3.org/TR/WCAG21/#">Web Content Accessibility Guidelines (WCAG) 2.1</a></li>
     <li><code>WCAG22:</code> <a href="http://www.w3.org/TR/WCAG22/#">Web Content Accessibility Guidelines (WCAG) 2.2</a></li>
-    <li><code>dcterms:</code> <a href="http://purl.org/dc/terms/">Dublin Core - DCMI Metadata Terms</a></li>
+    <li><code>oa:</code> <a href="http://www.w3.org/TR/annotation-vocab/">Web Annotation Vocabulary</a></li>
+    <li><code>wcagem:</code> <a href="http://www.w3.org/TR/WCAG-EM/#">Website Accessibility Conformance Evaluation Methodology (WCAG-EM) 1.0</a></li>
     <li><code>rdfs:</code> <a href="https://www.w3.org/TR/rdf-schema/">Resource Description Framework (RDF) Schema 1.1</a></li>
     <li><code>xsd:</code> <a href="https://www.w3.org/TR/rdf11-concepts/#h3_xsd-datatypes">XML Schema built-in datatypes in RDF</a></li>
     <li><code>foaf:</code> <a href="http://xmlns.com/foaf/spec/#">Friend of a Friend (FOAF)</a></li>
@@ -32,7 +36,7 @@ title: ACR - Accessibility Conformance Report
 
 Properties:
 
-* [score](#score)
+* [aggregatedScore](#aggregatedScore)
 * asset
 * accuracy
 * audit
@@ -43,7 +47,10 @@ Properties:
 * task
 * conformance
 * conformityCriteria
+* conformanceOption
+* involvesExpertise
 * requirement
+* standard
 
 Classes:
 
@@ -53,6 +60,8 @@ Classes:
 * WorkItem
 * RelevancyValue
 * AccuracyState
+* ConformanceReport
+* ConformanceStandard
 
 Instances:
 
@@ -84,7 +93,7 @@ Vocabulary extension:
 * earl:test
 * earl:pointer
 
-### `score`
+### `aggregatedScore`
 (**State:** *Prototype*)
 
 Property - Assessment results percentage score
@@ -111,7 +120,7 @@ Range: Literal containing a "data URLs"
 
 
 ### `accuracy`
-(**State:** *Prototype* - name to re-think)
+(**State:** *Prototype*)
 
 Property - Accuracy of the item that has been audited
 
@@ -170,11 +179,11 @@ Domain: `acr:AuditReport`
 Range: `acr:AuditReportNote`
 
 
-## `conformityCriteria`
+## `conformity`
 
 (**State:** *Prototype*)
 
-Property - Conformity criteria 
+Property - Conformity to a requirement defined by the standards and refined by the conformance options.
 
 Domain: `acr:ConformanceReport`
 Range: `acr:ConformanceRequirement`
@@ -186,7 +195,7 @@ Range: `acr:ConformanceRequirement`
 
 Property - A requirement defined by a standard
 
-Domain: `acr:ConformanceRequirement`
+Domain: `acr:ConformanceRequirement`, `acr:WorkItem`
 Range: `acr:ConformanceStandard`
 
 ## `conformance`
@@ -203,7 +212,65 @@ Range: `acr:ConformanceState`
 
 (**State:** *Prototype*)
 
-Class - Conformance report.
+Class - A conformance report.
+
+
+## `standard`
+
+(**State:** *Prototype*)
+
+Property - A conformance result of a tested requirement
+
+Domain: `acr:ConformanceReport`
+Range: `acr:ConformanceStandard` (IRI identifying the standard)
+
+
+### `ConformanceStandard`
+
+(**State:** *Prototype*)
+
+Class - A standard followed to conduct the conformance report.
+
+
+## `conformanceOption`
+
+(**State:** *Prototype*)
+
+Property - A conformance result of a tested requirement
+
+Instances can be found in [act:standard/profiles/](https://github.com/wet-boew/act-rules/tree/main/src/standard/profiles)
+
+Domain: `acr:ConformanceReport`
+Range: `acr:ConformanceOption` (IRI identifying the standard options)
+
+
+### `ConformanceRequirement`
+
+(**State:** *Prototype*)
+
+Class - An evaluation about the conformity at a requirement.
+
+
+### `involvesExpertise`
+
+(**State:** *Prototype*)
+
+Property - Expertise topic which the assessment or the conformance report may involve to be issued.
+
+Instances can be found in [act:standard/profiles/](https://github.com/wet-boew/act-rules/tree/main/src/standard/profiles)
+
+Domain: `acr:ConformanceReport` and `earl:Assertion`
+Range: `acr:Topic` or Literal
+
+
+### `Topic`
+
+(**State:** *Prototype*)
+
+Class - Topic used to identify an expertise domain.
+
+There is no default/core instances. Instances are defined in the [Topic list](topics)
+
 
 
 ### `severity`
@@ -433,6 +500,15 @@ List only the test (techniques) which has going to be impacted or related to the
 <details>
 <summary>View the outdated prototyped term</summary>
 
+
+### `score`
+(**State:** *Outdated Prototype* on 2023-05-23)
+
+Property - Assessment results percentage score
+
+Domain: `earl:Assertion`
+Range: Literal
+
 ### `outcome`
 (**State:** *Outdated Prototype* on 2023-05-23)
 Property - Human readable string of the test result.
@@ -506,4 +582,4 @@ Property - Human readable string of the assessor name
 
 ## Sample report
 
-See [Pierre Dubois GitHub comment on issue #9771](https://github.com/wet-boew/wet-boew/issues/9271#issuecomment-1117471131)
+See [Pierre Dubois GitHub comment on issue #9771](https://github.com/wet-boew/wet-boew/issues/9271#issuecomment-1117471131) and the ACR methodology in wet-boew working examples

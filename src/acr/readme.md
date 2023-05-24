@@ -60,6 +60,7 @@ Classes:
 * [AuditReport](#auditreport)
 * [AuditReportNote](#AuditReportNote)
 * [ConformanceReport](#ConformanceReport)
+* [ConformanceRequirement](#ConformanceRequirement)
 * [ConformanceStandard](#ConformanceStandard)
 * [ConformanceState](#ConformanceState)
 * [RelevancyValue](#RelevancyValue)

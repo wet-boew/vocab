@@ -32,68 +32,69 @@ title: ACR - Accessibility Conformance Report
   </ul>
 </div>
 
-## Vocabulary terms
+## Terms summary
 
 Properties:
 
+* [accuracy](#accuracy)
 * [aggregatedScore](#aggregatedScore)
-* asset
-* accuracy
-* audit
-* auditNote
-* assessment
-* severity
-* relevancy
-* task
-* conformance
-* conformityCriteria
-* conformanceOption
-* involvesExpertise
-* requirement
-* standard
+* [assessment](#assessment)
+* [asset](#asset)
+* [audit](#audit)
+* [auditNote](#auditNote)
+* [conformance](#conformance)
+* [conformityCriteria](#conformityCriteria)
+* [conformanceOption](#conformanceOption)
+* [involvesExpertise](#involvesExpertise)
+* [relevancy](#relevancy)
+* [requirement](#requirement)
+* [severity](#severity)
+* [standard](#standard)
+* [task](#task)
 
 Classes:
 
+* [AccuracyState](#AccuracyState)
 * [AuditReport](#auditreport)
-* AuditReportNote
-* SeverityValue
-* WorkItem
-* RelevancyValue
-* AccuracyState
-* ConformanceReport
-* ConformanceStandard
+* [AuditReportNote](#AuditReportNote)
+* [ConformanceReport](#ConformanceReport)
+* [ConformanceStandard](#ConformanceStandard)
+* [RelevancyValue](#RelevancyValue)
+* [SeverityValue](#SeverityValue)
+* [WorkItem](#WorkItem)
 
 Instances:
 
-* critical (of SeverityValue)
-* serious (of SeverityValue)
-* moderate (of SeverityValue)
-* trivial (of SeverityValue)
-* noSeverity (of SeverityValue)
-* sufficient (of RelevancyValue)
-* advisory (of RelevancyValue)
-* failure (of RelevancyValue)
-* compatibility (of RelevancyValue)
-* usability (of RelevancyValue)
-* expertise (of RelevancyValue)
-* opinionated (of RelevancyValue)
-* comments (of RelevancyValue)
-* noRelevancy (of RelevancyValue)
-* forEvaluation (of SeverityValue and RelevancyValue)
-* notRelevant (of SeverityValue and RelevancyValue)
-* falsePositive (of AccuracyState)
-* falseNegative (of AccuracyState)
-* accurate (of AccuracyState)
-* [Topic list](topics) (of Topic)
-* [Relevancy value extended list](relevancies) (of RelevancyValue)
-
+* [accurate](#accurate) (of AccuracyState)
+* [advisory](#advisory) (of RelevancyValue)
+* [comments](#comments) (of RelevancyValue)
+* [compatibility](#compatibility) (of RelevancyValue)
+* [critical](#critical) (of SeverityValue)
+* [expertise](#expertise) (of RelevancyValue)
+* [failure](#failure) (of RelevancyValue)
+* [falseNegative](#falseNegative) (of AccuracyState)
+* [falsePositive](#falsePositive) (of AccuracyState)
+* [forEvaluation](#forEvaluation) (of SeverityValue and RelevancyValue)
+* [moderate](#moderate) (of SeverityValue)
+* [noRelevancy](#noRelevancy) (of RelevancyValue)
+* [noSeverity](#noSeverity) (of SeverityValue)
+* [notRelevant](#notRelevant) (of SeverityValue and RelevancyValue)
+* [opinionated](#opinionated) (of RelevancyValue)
+* [relevancy value extended list](relevancies) (of RelevancyValue)
+* [serious](#serious) (of SeverityValue)
+* [sufficient](#sufficient) (of RelevancyValue)
+* [topic list](topics) (of Topic)
+* [trivial](#trivial) (of SeverityValue)
+* [usability](#usability) (of RelevancyValue)
 
 Vocabulary extension:
 
 * earl:mode
+* earl:pointer
 * earl:result
 * earl:test
-* earl:pointer
+
+## Vocabularies
 
 ### `aggregatedScore`
 (**State:** *Prototype*)

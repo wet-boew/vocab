@@ -84,6 +84,8 @@ Instances:
 * falsePositive (of AccuracyState)
 * falseNegative (of AccuracyState)
 * accurate (of AccuracyState)
+* [Topic list](topics) (of Topic)
+* [Relevancy value extended list](relevancies) (of RelevancyValue)
 
 
 Vocabulary extension:

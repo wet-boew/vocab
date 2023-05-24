@@ -29,7 +29,7 @@ title: Topics for accessibility conformance report
       <dt>French label</dt>
       <dd property="skos:prefLabel dct:title" lang="fr">Aria</dd>
       <dt>WET-BOEW ACR methodology reference</dt>
-      <dd><code>wbv:acr/topics/aria</code></dd>
+      <dd><code>wbv:acr/topics#aria</code></dd>
     </dl>
   </section>
   
@@ -45,7 +45,7 @@ title: Topics for accessibility conformance report
       <dt>French label</dt>
       <dd property="skos:prefLabel dct:title" lang="fr">HTML</dd>
       <dt>WET-BOEW ACR methodology reference</dt>
-      <dd><code>wbv:acr/topics/html</code></dd>
+      <dd><code>wbv:acr/topics#html</code></dd>
     </dl>
   </section>
   
@@ -61,7 +61,7 @@ title: Topics for accessibility conformance report
       <dt>French label</dt>
       <dd property="skos:prefLabel dct:title" lang="fr">Formulaire</dd>
       <dt>WET-BOEW ACR methodology reference</dt>
-      <dd><code>wbv:acr/topics/form</code></dd>
+      <dd><code>wbv:acr/topics#form</code></dd>
     </dl>
   </section>
   
@@ -77,7 +77,7 @@ title: Topics for accessibility conformance report
       <dt>French label</dt>
       <dd property="skos:prefLabel dct:title" lang="fr">Audio et vidéo</dd>
       <dt>WET-BOEW ACR methodology reference</dt>
-      <dd><code>wbv:acr/topics/audio_video</code></dd>
+      <dd><code>wbv:acr/topics#audio_video</code></dd>
     </dl>
   </section>
   
@@ -93,7 +93,7 @@ title: Topics for accessibility conformance report
       <dt>French label</dt>
       <dd property="skos:prefLabel dct:title" lang="fr">Imagerie</dd>
       <dt>WET-BOEW ACR methodology reference</dt>
-      <dd><code>wbv:acr/topics/imaging</code></dd>
+      <dd><code>wbv:acr/topics#imaging</code></dd>
     </dl>
   </section>
 </div>

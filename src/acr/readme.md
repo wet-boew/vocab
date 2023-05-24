@@ -120,7 +120,7 @@ Vocabulary extension:
 	<dt>English label</dt>
 	<dd property="skos:prefLabel">Aggregated score</dd>
 	<dt>French label</dt>
-	<dd property="skos:prefLabel" lang="fr"></dd>
+	<dd property="skos:prefLabel" lang="fr">Résultat calculé</dd>
 	<dt>Usage note</dt>
 	<dd property="vann:usageNote">Provisional use with the ACR methodology described by GitHub wet-boew PR #9580</dd>
 	<dt>WET-BOEW ACR methodology reference</dt>

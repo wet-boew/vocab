@@ -125,6 +125,7 @@ Vocabulary extension:
 	<dd property="vann:usageNote>Provisional use with the ACR methodology described by GitHub wet-boew PR #9580</dd>
 	<dt>WET-BOEW ACR methodology reference</dt>
 	<dd><code>acr:aggregatedScore</code></dd>
+  </dl>
 </section>
 
 

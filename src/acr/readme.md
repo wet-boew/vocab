@@ -122,7 +122,7 @@ Vocabulary extension:
 	<dt>French label</dt>
 	<dd property="skos:prefLabel" lang="fr"></dd>
 	<dt>Usage note</dt>
-	<dd property="vann:usageNote>Provisional use with the ACR methodology described by GitHub wet-boew PR #9580</dd>
+	<dd property="vann:usageNote">Provisional use with the ACR methodology described by GitHub wet-boew PR #9580</dd>
 	<dt>WET-BOEW ACR methodology reference</dt>
 	<dd><code>acr:aggregatedScore</code></dd>
   </dl>

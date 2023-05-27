@@ -18,6 +18,7 @@ title: ACR - Accessibility Conformance Report
     <li><code>WCAG21:</code> <a href="http://www.w3.org/TR/WCAG21/#">Web Content Accessibility Guidelines (WCAG) 2.1</a></li>
     <li><code>WCAG22:</code> <a href="http://www.w3.org/TR/WCAG22/#">Web Content Accessibility Guidelines (WCAG) 2.2</a></li>
     <li><code>oa:</code> <a href="http://www.w3.org/TR/annotation-vocab/">Web Annotation Vocabulary</a></li>
+    <li><code>doap:</code> <a href="https://github.com/ewilderj/doap/blob/master/schema/doap.rdf">Description of a Project (DOAP)</a> (<code>http://usefulinc.com/ns/doap#</code></li>
     <li><code>wcagem:</code> <a href="http://www.w3.org/TR/WCAG-EM/#">Website Accessibility Conformance Evaluation Methodology (WCAG-EM) 1.0</a></li>
     <li><code>rdfs:</code> <a href="https://www.w3.org/TR/rdf-schema/">Resource Description Framework (RDF) Schema 1.1</a></li>
     <li><code>xsd:</code> <a href="https://www.w3.org/TR/rdf11-concepts/#h3_xsd-datatypes">XML Schema built-in datatypes in RDF</a></li>

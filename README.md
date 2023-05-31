@@ -11,14 +11,24 @@ Vocabulaire et context JSON-LD utilisé par la wet-boew. Tout problèmes ou ques
 * Expiré: Terme ou contexte qui a été retiré et qui ne dois aucument être utilisé. Ceci est applicable seulement pour les termes ou contextes précédemment provisionel ou identifié obselète pour une période de plus de cinq ans.
 * Prototype: État par défaut de tout terme non étiqueté avec un indice de stabilité. Terme ou contexte proposé nécessitant une revue et approbation par les pairs.
 
-## Vocabulaires 
+## Vocabulaires (actif)
 
-* [Rapport de conformance d'accessibilité - ACR](acr/)
+* [Rapport de conformance à l'accessibilité - RCA](acr)
+* [Instances representant une pertinance pour les RCA](acr/relevancies)
+* [Instances representant une topic pour les RCA](acr/topics)
 
-## Contextes
+## Contextes (actif)
 
-* [2022 - ACR pour les nouveau critère de mérite du WCAG](context/2022/acr-new-wcag-sc.json-ld) ([Code source](https://github.com/wet-boew/vocab/blob/main/context/2022/acr-new-wcag-sc.json-ld)) - Prototyping
-  * URL: `https://wet-boew.github.io/vocab/context/2022/acr-new-wcag-sc.json-ld`
+* [2023 - Évaluation de la conformance à l'accessibilité commenté en anglais](context/2023/assessment-report-en.json-ld) ([Code source](https://github.com/wet-boew/vocab/blob/main/src/context/2023/assessment-report-en.json)) - Prototyping
+  * URL: `https://wet-boew.github.io/vocab/context/2023/assessment-report-en.json-ld`
+* [2023 - Rapport de conformance à l'accessibilité commenté en anglais](context/2023/conformance-report-en.json-ld) ([Code source](https://github.com/wet-boew/vocab/blob/main/src/context/2023/conformance-report-en.json)) - Prototyping
+  * URL: `https://wet-boew.github.io/vocab/context/2023/conformance-report-en.json-ld`
+
+
+## Étiquettes (actif)
+
+* [2023 - Méthodologie pour la production de rapport de conformance à l'accessibilité](labels/2023/acr-methodology.json) ([Code source](https://github.com/wet-boew/vocab/blob/main/src/labels/2023/acr-methodology.json)) - Prototyping
+  * URL: `https://wet-boew.github.io/vocab/labels/2023/acr-methodology.json`
 
 ---
 

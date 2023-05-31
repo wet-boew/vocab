@@ -64,6 +64,7 @@ Classes:
 * [ConformanceRequirement](#ConformanceRequirement)
 * [ConformanceStandard](#ConformanceStandard)
 * [ConformanceState](#ConformanceState)
+* [DataURL](#DataURL)
 * [RelevancyValue](#RelevancyValue)
 * [SeverityValue](#SeverityValue)
 
@@ -444,6 +445,32 @@ The servery/relevancy for the current item need to be evaluated, measured and up
 ##### `notRelevant`
 
 Defining the severity/relevancy would not provide any benefit at the current item.
+
+
+<section id="DataURL" resource="#DataURL" typeof="rdf:Datatype">
+  <h3>Data URL</h3>
+  <p>(<strong>State:</strong> <em>Prototype</em>)</p>
+  <p>Data type (Class) - Represent Data URL content through a string literal.</p>
+  <dl>
+	<dt>Resource id</dt>
+	<dd><code>#DataURL</code></dd>
+	<dt>Type of</dt>
+	<dd><code>rdf:Datatype</code></dd>
+	<dt>Same as:</dt>
+	<dd>
+		<code>owl:sameAs https://www.rfc-editor.org/rfc/rfc2397#section-2</code>
+		<meta property="owl:sameAs" value="https://www.rfc-editor.org/rfc/rfc2397#section-2">
+	</dd>
+	<dt>English label</dt>
+	<dd property="rdfs:label">Data URL</dd>
+	<dt>French label</dt>
+	<dd property="rdfs:label" lang="fr">URL de données</dd>
+	<dt>Usage note</dt>
+	<dd property="vann:usageNote">Provisional use with the ACR methodology described by GitHub wet-boew PR #9580</dd>
+	<dt>WET-BOEW ACR methodology reference</dt>
+	<dd><code>acr:DataURL</code></dd>
+  </dl>
+</section>
 
 ---
 

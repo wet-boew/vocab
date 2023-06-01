@@ -48,6 +48,7 @@ Properties:
 * [conformance](#conformance)
 * [conformity](#conformity)
 * [conformanceOption](#conformanceOption)
+* [content](#content)
 * [involvesExpertise](#involvesExpertise)
 * [relevancy](#relevancy)
 * [requirement](#requirement)
@@ -58,13 +59,17 @@ Classes:
 
 * [AccuracyState](#AccuracyState)
 * [AssessmentReport](#AssessmentReport)
+* [Attachment](#Attachment)
+  * [AttachmentImage](#AttachmentImage) (subclass of Attachment)
+  * [AttachmentSourceCode](#AttachmentSourceCode) (subclass of Attachment)
+  * [AttachmentJson](#AttachmentJson) (subclass of Attachment)
+  * [AttachmentHtml](#AttachmentHtml) (subclass of Attachment)
 * [AuditReport](#auditreport)
 * [AuditReportNote](#AuditReportNote)
 * [ConformanceReport](#ConformanceReport)
 * [ConformanceRequirement](#ConformanceRequirement)
 * [ConformanceStandard](#ConformanceStandard)
 * [ConformanceState](#ConformanceState)
-* [DataURL](#DataURL)
 * [RelevancyValue](#RelevancyValue)
 * [SeverityValue](#SeverityValue)
 
@@ -158,7 +163,7 @@ Class - Assessment report which is often also an `earl:Assertion`
 Property - Data URLs containing an assets related to the item
 
 Domain: `acr:AuditReportNote`, `acr:TestResult`, `wf:Task`
-Range: Literal or acr:Attachment; acr:Attachment instance can be: `acr:DataURL` (consisting into a literal containing a "data URLs" defined by https://www.rfc-editor.org/rfc/rfc2397#section-2); URL; JSON snipet; HTML snipet; Text; JSON encoded in DataURL;....
+Range: Literal same as defined by (`acr:content`)[#content] or acr:Attachment; acr:Attachment instance can be: `acr:AttachmentImage`; `acr:AttachmentSourceCode`; `acr:AttachmentJson`; `acr:AttachmentHtml`
 
 
 ### `accuracy`
@@ -447,30 +452,145 @@ The servery/relevancy for the current item need to be evaluated, measured and up
 Defining the severity/relevancy would not provide any benefit at the current item.
 
 
-<section id="DataURL" resource="#DataURL" typeof="rdf:Datatype">
-  <h3>Data URL</h3>
+<section id="Attachment" resource="#Attachment" typeof="rdf:Class">
+  <h3>Attachment</h3>
   <p>(<strong>State:</strong> <em>Prototype</em>)</p>
-  <p>Data type (Class) - Represent Data URL content through a string literal.</p>
+  <p>Class - Represent an attachment.</p>
   <dl>
 	<dt>Resource id</dt>
-	<dd><code>#DataURL</code></dd>
+	<dd><code>#Attachment</code></dd>
 	<dt>Type of</dt>
-	<dd><code>rdf:Datatype</code></dd>
-	<dt>Same as:</dt>
-	<dd>
-		<code>owl:sameAs https://www.rfc-editor.org/rfc/rfc2397#section-2</code>
-		<meta property="owl:sameAs" value="https://www.rfc-editor.org/rfc/rfc2397#section-2">
-	</dd>
+	<dd><code>rdf:Class</code></dd>
 	<dt>English label</dt>
-	<dd property="rdfs:label">Data URL</dd>
+	<dd property="rdfs:label">Attachment</dd>
 	<dt>French label</dt>
-	<dd property="rdfs:label" lang="fr">URL de données</dd>
+	<dd property="rdfs:label" lang="fr">Attachement</dd>
+	<dt>Expected use of <code>acr:content</code> property</dt>
+	<dd>An URL from the type <code>xsd:anyURI</code></dd>  
 	<dt>Usage note</dt>
 	<dd property="vann:usageNote">Provisional use with the ACR methodology described by GitHub wet-boew PR #9580</dd>
 	<dt>WET-BOEW ACR methodology reference</dt>
-	<dd><code>acr:DataURL</code></dd>
+	<dd><code>acr:Attachment</code></dd>
   </dl>
 </section>
+
+<section id="AttachmentImage" resource="#AttachmentImage" typeof="rdf:Class">
+  <h4>Image attachment</h4>
+  <p>(<strong>State:</strong> <em>Prototype</em>)</p>
+  <p>Class - Represent an attached image.</p>
+  <dl>
+	<dt>Resource id</dt>
+	<dd><code>#AttachmentImage</code></dd>
+	<dt>Type of</dt>
+	<dd><code>rdf:Class</code></dd>
+	<dt>Subclass of</dt>
+	<dd>
+		<code>acr:Attachment</code>
+		<meta property="rdfs:subClassOf" value="acr:Attachment" />
+	</dd>
+	<dt>English label</dt>
+	<dd property="rdfs:label">Image</dd>
+	<dt>French label</dt>
+	<dd property="rdfs:label" lang="fr">Image</dd>
+	<dt>Expected use of <code>acr:content</code> property</dt>
+	<dd>An URL from the type <code>xsd:anyURI</code></dd>  
+	<dt>Usage note</dt>
+	<dd property="vann:usageNote">Provisional use with the ACR methodology described by GitHub wet-boew PR #9580</dd>
+	<dt>WET-BOEW ACR methodology reference</dt>
+	<dd><code>acr:AttachmentImage</code></dd>
+  </dl>
+</section>
+
+<section id="AttachmentSourceCode" resource="#AttachmentSourceCode" typeof="rdf:Class">
+  <h4>Source code attachment</h4>
+  <p>(<strong>State:</strong> <em>Prototype</em>)</p>
+  <p>Class - Represent an attached source code document.</p>
+  <dl>
+	<dt>Resource id</dt>
+	<dd><code>#AttachmentSourceCode</code></dd>
+	<dt>Type of</dt>
+	<dd><code>rdf:Class</code></dd>
+	<dt>Subclass of</dt>
+	<dd>
+		<code>acr:Attachment</code>
+		<meta property="rdfs:subClassOf" value="acr:Attachment" />
+	</dd>
+	<dt>English label</dt>
+	<dd property="rdfs:label">Source code document</dd>
+	<dt>French label</dt>
+	<dd property="rdfs:label" lang="fr">Document de code source</dd>
+	<dt>Expected use of <code>acr:content</code> property</dt>
+	<dd>Text literal from the type <code>xsd:string</code></dd>  
+	<dt>Usage note</dt>
+	<dd property="vann:usageNote">Provisional use with the ACR methodology described by GitHub wet-boew PR #9580</dd>
+	<dt>WET-BOEW ACR methodology reference</dt>
+	<dd><code>acr:AttachmentSourceCode</code></dd>
+  </dl>
+</section>
+
+<section id="AttachmentJson" resource="#AttachmentJson" typeof="rdf:Class">
+  <h4>JSON attachment</h4>
+  <p>(<strong>State:</strong> <em>Prototype</em>)</p>
+  <p>Class - Represent an attached json document.</p>
+  <dl>
+	<dt>Resource id</dt>
+	<dd><code>#AttachmentJson</code></dd>
+	<dt>Type of</dt>
+	<dd><code>rdf:Class</code></dd>
+	<dt>Subclass of</dt>
+	<dd>
+		<code>acr:Attachment</code>
+		<meta property="rdfs:subClassOf" value="acr:Attachment" />
+	</dd>
+	<dt>English label</dt>
+	<dd property="rdfs:label">Json document</dd>
+	<dt>French label</dt>
+	<dd property="rdfs:label" lang="fr">Document json</dd>
+	<dt>Expected use of <code>acr:content</code> property</dt>
+	<dd>An JSON from the type <code>rdf:JSON</code> aka <code>@json</code> in JSON-LD</dd>  
+	<dt>Usage note</dt>
+	<dd property="vann:usageNote">Provisional use with the ACR methodology described by GitHub wet-boew PR #9580</dd>
+	<dt>WET-BOEW ACR methodology reference</dt>
+	<dd><code>acr:AttachmentJson</code></dd>
+  </dl>
+</section>
+
+<section id="AttachmentHtml" resource="#AttachmentHtml" typeof="rdf:Class">
+  <h4>HTML attachment</h4>
+  <p>(<strong>State:</strong> <em>Prototype</em>)</p>
+  <p>Class - Represent an attached html document.</p>
+  <dl>
+	<dt>Resource id</dt>
+	<dd><code>#AttachmentHtml</code></dd>
+	<dt>Type of</dt>
+	<dd><code>rdf:Class</code></dd>
+	<dt>Subclass of</dt>
+	<dd>
+		<code>acr:Attachment</code>
+		<meta property="rdfs:subClassOf" value="acr:Attachment" />
+	</dd>
+	<dt>English label</dt>
+	<dd property="rdfs:label">HTML document</dd>
+	<dt>French label</dt>
+	<dd property="rdfs:label" lang="fr">Document html</dd>
+	<dt>Expected use of <code>acr:content</code> property</dt>
+	<dd>HTML literal from the type <code>rdf:HTML</code></dd>  
+	<dt>Usage note</dt>
+	<dd property="vann:usageNote">Provisional use with the ACR methodology described by GitHub wet-boew PR #9580</dd>
+	<dt>WET-BOEW ACR methodology reference</dt>
+	<dd><code>acr:AttachmentHtml</code></dd>
+  </dl>
+</section>
+
+
+### `content`
+
+(**State:** *Prototype*)
+
+Property - Contain the content of an attachment. Default value is an URL (`xsd:anyURI`) which
+
+**Domain**: `acr:Attachment`
+**Range**: `xsd:anyURI`, `xsd:string`, `rdf:JSON`, `rdf:HTML`
 
 ---
 

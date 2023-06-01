@@ -188,9 +188,9 @@ editorial_note: "Complete the @context and adapt the JSON manager to map the URL
       "WCAG2xTech:failures/F67": "F67: Failure of Success Criterion 1.1.1 and 1.2.1 due to providing long descriptions for non-text content that does not serve the same purpose or does not present the same information",
       "WCAG2xTech:failures/F71": "F71: Failure of Success Criterion 1.1.1 due to using text look-alikes to represent text without providing a text alternative",
       "WCAG2xTech:failures/F72": "F72: Failure of Success Criterion 1.1.1 due to using ASCII art without providing a text alternative",
-      "WCAG2xTech:failures/F97": "F97 - Failure due to locking the orientation to landscape or portrait view"
+      "WCAG2xTech:failures/F97": "F97 - Failure due to locking the orientation to landscape or portrait view",
 
-      "act:rules/automated/accessibility_insights_web": "Automated testing with the Accessibility insight web",
+      "act:rules/automated/accessibility_insights_web": "Automated testing with the Accessibility insight web"
 
     },
     "fr": {
@@ -318,9 +318,9 @@ editorial_note: "Complete the @context and adapt the JSON manager to map the URL
       "WCAG2xTech:failures/F67": "F67: Échec des critères de succès 1.1.1 et 1.2.1 en raison de la fourniture de longues descriptions pour un contenu non textuel qui ne sert pas le même objectif ou ne présente pas les mêmes informations",
       "WCAG2xTech:failures/F71": "F71: Échec du critère de succès 1.1.1 en raison de l'utilisation de textes similaires pour représenter du texte sans fournir de texte alternatif",
       "WCAG2xTech:failures/F72": "F72: Échec du critère de succès 1.1.1 en raison de l'utilisation de l'art ASCII sans fournir d'alternative textuelle",
-      "WCAG2xTech:failures/F97": "F97 - Échec dû au verrouillage de l'orientation en mode paysage ou portrait"
+      "WCAG2xTech:failures/F97": "F97 - Échec dû au verrouillage de l'orientation en mode paysage ou portrait",
       
-      "act:rules/automated/accessibility_insights_web": "Test automatisé avec 'Accessibility insight web'",
+      "act:rules/automated/accessibility_insights_web": "Test automatisé avec 'Accessibility insight web'"
     }
   },
   "earl:TestMode": {

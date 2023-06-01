@@ -190,6 +190,8 @@ editorial_note: "Complete the @context and adapt the JSON manager to map the URL
       "WCAG2xTech:failures/F72": "F72: Failure of Success Criterion 1.1.1 due to using ASCII art without providing a text alternative",
       "WCAG2xTech:failures/F97": "F97 - Failure due to locking the orientation to landscape or portrait view"
 
+      "act:rules/automated/accessibility_insights_web": "Automated testing with the Accessibility insight web",
+
     },
     "fr": {
       "ATAG:sc_b111": "(pas traduit) ATAG SC B.1.1.1 Content Auto-Generation After Authoring Sessions (WCAG)",
@@ -317,6 +319,8 @@ editorial_note: "Complete the @context and adapt the JSON manager to map the URL
       "WCAG2xTech:failures/F71": "F71: Échec du critère de succès 1.1.1 en raison de l'utilisation de textes similaires pour représenter du texte sans fournir de texte alternatif",
       "WCAG2xTech:failures/F72": "F72: Échec du critère de succès 1.1.1 en raison de l'utilisation de l'art ASCII sans fournir d'alternative textuelle",
       "WCAG2xTech:failures/F97": "F97 - Échec dû au verrouillage de l'orientation en mode paysage ou portrait"
+      
+      "act:rules/automated/accessibility_insights_web": "Test automatisé avec 'Accessibility insight web'",
     }
   },
   "earl:TestMode": {

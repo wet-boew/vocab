@@ -158,7 +158,7 @@ Class - Assessment report which is often also an `earl:Assertion`
 Property - Data URLs containing an assets related to the item
 
 Domain: `acr:AuditReportNote`, `acr:TestResult`, `wf:Task`
-Range: `acr:DataURL` (consisting into a literal containing a "data URLs" defined by https://www.rfc-editor.org/rfc/rfc2397#section-2)
+Range: Literal or acr:Attachment; acr:Attachment instance can be: `acr:DataURL` (consisting into a literal containing a "data URLs" defined by https://www.rfc-editor.org/rfc/rfc2397#section-2); URL; JSON snipet; HTML snipet; Text; JSON encoded in DataURL;....
 
 
 ### `accuracy`

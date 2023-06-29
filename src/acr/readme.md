@@ -340,7 +340,7 @@ Range: `acr:Topic` or Literal
 
 Class - Topic used to identify an expertise domain.
 
-There is no default/core instances. Instances are defined in the [Topic list](topics)
+There is no default/core instances. Instances are defined in the [Topic list](acr/topics)
 
 
 
@@ -398,7 +398,7 @@ Class - A value or expression that describes the underpinning of the described i
 
 #### Instances
 
-[RelevancyValue extended list](relevancies)
+[RelevancyValue extended list](acr/relevancies)
 
 
 ##### `sufficient`

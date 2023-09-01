@@ -50,6 +50,7 @@ Properties:
 * [conformanceOption](#conformanceOption)
 * [content](#content)
 * [involvesExpertise](#involvesExpertise)
+* [mediaQuery](#mediaQuery)
 * [relevancy](#relevancy)
 * [requirement](#requirement)
 * [severity](#severity)
@@ -70,6 +71,7 @@ Classes:
 * [ConformanceRequirement](#ConformanceRequirement)
 * [ConformanceStandard](#ConformanceStandard)
 * [ConformanceState](#ConformanceState)
+* [MediaQueryList](#MediaQueryList)
 * [RelevancyValue](#RelevancyValue)
 * [SeverityValue](#SeverityValue)
 
@@ -107,6 +109,7 @@ Vocabulary extension:
 * earl:pointer
 * earl:result
 * earl:test
+* oa:hasState
 
 ## Vocabularies
 
@@ -592,6 +595,39 @@ Property - Contain the content of an attachment. Default value is an URL (`xsd:a
 **Domain**: `acr:Attachment`
 **Range**: `xsd:anyURI`, `xsd:string`, `rdf:JSON`, `rdf:HTML`
 
+<section id="MediaQueryList" resource="#MediaQueryList" typeof="rdf:Class">
+  <h3>Media query list</h3>
+  <p>(<strong>State:</strong> <em>Prototype</em>)</p>
+  <p>Class - Represent a CSS Media Query List.</p>
+  <dl>
+	<dt>Resource id</dt>
+	<dd><code>#MediaQueryList</code></dd>
+	<dt>Type of</dt>
+	<dd><code>rdf:Class</code>, <code></code></dd>
+	<dt>Sub class of</dt>
+	<dd><code>rdfs:subClassOf oa:State</code></dd>
+	<dt>Same as</dt>
+	<dd><code>owl:sameAs https://www.w3.org/TR/mediaqueries-5/#media-query-list</dd>
+	<dt>English label</dt>
+	<dd property="rdfs:label">Media query list</dd>
+	<dt>French label</dt>
+	<dd property="rdfs:label" lang="fr">Liste de requête média</dd>
+	<dt>Expected use of <code>acr:mediaQuery</code> property</dt>
+	<dd>A valid CSS media query list string which are testable with the JS browser function <code>window.matchMedia()</code></dd>
+	<dt>WET-BOEW ACR methodology reference</dt>
+	<dd><code>acr:MediaQueryList</code></dd>
+  </dl>
+</section>
+
+### `mediaQuery`
+
+(**State:** *Prototype*)
+
+Property - A valid CSS media query string that are testable with the JS browser function `window.matchMedia()`. For exmaple: "(min-width: 992px) and (max-width: 1199px)"
+
+**Domain**: `acr:MediaQueryList`
+**Range**: `xsd:string`, [CSS Media Query](https://www.w3.org/TR/mediaqueries-5/#media)
+
 ---
 
 ## Vocabulary extension/specialization
@@ -644,8 +680,23 @@ Originally defined: [https://www.w3.org/TR/EARL/#pointer](https://www.w3.org/TR/
 ```
 earl:pointer
 	a rdf:Property ;
-	rdfs:domain [ earl:TestResult, wf:Task ] ;
+	rdfs:domain [ earl:TestResult, wf:Task, earl:TestSubject ] ;
 	rdfs:range ptr:Pointer .
+```
+
+### `oa:hasState`
+
+(**State:** *Prototype*)
+
+Originally defined: [https://www.w3.org/TR/annotation-vocab/#hasstate](https://www.w3.org/TR/annotation-vocab/#hasstate)
+Documented: [https://www.w3.org/TR/annotation-model/#states](https://www.w3.org/TR/annotation-model/#states)
+IRI: http://www.w3.org/ns/oa#hasState
+
+```
+oa:hasState
+	a rdf:Property ;
+	rdfs:domain [ oa:ResourceSelection, earl:TestSubject, earl:TestResult ] ;
+	rdfs:range oa:State .
 ```
 
 ---

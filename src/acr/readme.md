@@ -607,7 +607,7 @@ Property - Contain the content of an attachment. Default value is an URL (`xsd:a
 	<dt>Sub class of</dt>
 	<dd><code>rdfs:subClassOf oa:State</code></dd>
 	<dt>Same as</dt>
-	<dd><code>owl:sameAs https://www.w3.org/TR/mediaqueries-5/#media-query-list</dd>
+	<dd><code>owl:sameAs https://www.w3.org/TR/mediaqueries-5/#media-query-list</code></dd>
 	<dt>English label</dt>
 	<dd property="rdfs:label">Media query list</dd>
 	<dt>French label</dt>
